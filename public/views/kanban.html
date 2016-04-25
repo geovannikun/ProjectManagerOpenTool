@@ -1,0 +1,35 @@
+<md-card class="board" id="board-1" ng-repeat="board in boards" flex>
+    <md-card-header>
+        <md-card-header-text>
+            <span class="md-title" contentEditable="true" ng-model="board.name"></span>
+            <span class="md-subhead">{{board.tasks.length}} tasks</span>
+        </md-card-header-text>
+    </md-card-header>
+    <md-card-content dnd-list="board.tasks">
+        <md-card class='task' ng-repeat="task in board.tasks" dnd-draggable="task" dnd-moved="board.tasks.splice($index, 1)" dnd-effect-allowed="move">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline" ng-switch="task.type">
+                        <md-icon md-svg-icon="img/icons/bug.svg" class="task-type bug" ng-switch-when="1"></md-icon>
+                        <md-icon md-svg-icon="img/icons/code-braces.svg" class="task-type" ng-switch-when="2"></md-icon>
+                        <md-icon md-svg-icon="img/icons/code-braces.svg" class="task-type" ng-switch-default></md-icon>
+                        {{task.name}}
+                    </span>
+                    <md-button class="md-icon-button task-setting" aria-label="settings" ng-click="showSettings($event)">
+                        <md-icon md-svg-icon="img/icons/settings.svg"></md-icon>
+                    </md-button>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="start center">
+                <md-chips ng-model="task.members" name="fruitName" readonly="true" md-max-chips="5" flex="50">
+                    <md-chip-template>
+                        <img ng-src="{{users[$chip].img}}" class="md-avatar" alt="{{users[$chip].name}}" />
+                        <strong>{{users[$chip].name}}</strong>
+                    </md-chip-template>
+                </md-chips>
+                <md-button>Action 1</md-button>
+                <md-button>Action 2</md-button>
+            </md-card-actions>
+        </md-card>
+    </md-card-content>
+</md-card>

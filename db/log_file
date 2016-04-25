@@ -1,0 +1,217 @@
+2016-03-22T12:40:57.967912056 2.217753s notice: Recursively removing directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db/tmp
+2016-03-22T12:40:57.998435195 2.248279s notice: Initializing directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-03-22T12:40:57.998625644 2.248465s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db' did not already exist or is empty.)
+2016-03-22T12:40:57.998659238 2.248499s notice: Running rethinkdb 2.2.5~0trusty (GCC 4.8.2)...
+2016-03-22T12:40:58.003162970 2.253006s notice: Running on Linux 3.19.0-56-generic x86_64
+2016-03-22T12:40:58.003290405 2.253130s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-03-22T12:40:58.299500715 2.549342s info: Automatically using cache size of 2272 MB
+2016-03-22T12:40:58.300863247 2.550703s notice: Listening for intracluster connections on port 29015
+2016-03-22T12:40:58.305131132 2.554971s notice: Listening for client driver connections on port 28015
+2016-03-22T12:40:58.305395343 2.555235s notice: Listening for administrative HTTP connections on port 8080
+2016-03-22T12:40:58.305399454 2.555239s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-22T12:40:58.305399972 2.555239s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-22T12:40:58.305402341 2.555242s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-03-22T12:42:34.792854013 99.042694s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-03-22T12:42:34.793054578 99.042894s notice: Shutting down client connections...
+2016-03-22T12:42:34.793141171 99.042981s notice: All client connections closed.
+2016-03-22T12:42:34.793144158 99.042983s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-03-22T12:42:34.793579535 99.043419s notice: Storage engine shut down.
+2016-03-22T12:57:51.585501712 4.501551s notice: Running rethinkdb 2.2.5~0trusty (GCC 4.8.2)...
+2016-03-22T12:57:51.590839417 4.506887s notice: Running on Linux 3.19.0-56-generic x86_64
+2016-03-22T12:57:51.590975154 4.507018s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-03-22T12:57:51.680852789 4.596897s info: Automatically using cache size of 2246 MB
+2016-03-22T12:57:51.681509923 4.597553s notice: Listening for intracluster connections on port 29015
+2016-03-22T12:57:51.682360164 4.598403s notice: Listening for client driver connections on port 28015
+2016-03-22T12:57:51.682471343 4.598514s notice: Listening for administrative HTTP connections on port 8080
+2016-03-22T12:57:51.682472934 4.598516s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-22T12:57:51.682473191 4.598516s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-22T12:57:51.682474185 4.598517s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-03-22T13:12:46.278197773 899.194241s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-03-22T13:12:46.278373821 899.194417s notice: Shutting down client connections...
+2016-03-22T13:12:46.278457112 899.194500s notice: All client connections closed.
+2016-03-22T13:12:46.278459785 899.194503s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-03-22T13:12:46.278843298 899.194886s notice: Storage engine shut down.
+2016-03-22T13:12:48.151447316 0.727943s notice: Running rethinkdb 2.2.5~0trusty (GCC 4.8.2)...
+2016-03-22T13:12:48.156236183 0.732729s notice: Running on Linux 3.19.0-56-generic x86_64
+2016-03-22T13:12:48.156371524 0.732860s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-03-22T13:12:48.266120042 0.842611s info: Automatically using cache size of 2043 MB
+2016-03-22T13:12:48.268535270 0.845024s notice: Listening for intracluster connections on port 29015
+2016-03-22T13:12:48.270392233 0.846881s notice: Listening for client driver connections on port 28015
+2016-03-22T13:12:48.270636338 0.847124s notice: Listening for administrative HTTP connections on port 8080
+2016-03-22T13:12:48.270639929 0.847128s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-22T13:12:48.270640576 0.847128s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-22T13:12:48.270642738 0.847131s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-03-22T13:15:23.128726960 155.705216s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-03-22T13:15:23.128958598 155.705467s notice: Shutting down client connections...
+2016-03-22T13:15:23.129061111 155.705549s notice: All client connections closed.
+2016-03-22T13:15:23.129063957 155.705552s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-03-22T13:15:23.129562442 155.706051s notice: Storage engine shut down.
+2016-03-22T14:51:26.502855877 0.816827s notice: Running rethinkdb 2.2.5~0trusty (GCC 4.8.2)...
+2016-03-22T14:51:26.528190273 0.842140s notice: Running on Linux 3.19.0-56-generic x86_64
+2016-03-22T14:51:26.528254171 0.842202s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-03-22T14:51:26.770412048 1.084365s info: Automatically using cache size of 2807 MB
+2016-03-22T14:51:26.772648401 1.086597s notice: Listening for intracluster connections on port 29015
+2016-03-22T14:51:26.828912748 1.142861s notice: Listening for client driver connections on port 28015
+2016-03-22T14:51:26.829019255 1.142968s notice: Listening for administrative HTTP connections on port 8080
+2016-03-22T14:51:26.829021273 1.142969s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-22T14:51:26.829022432 1.142971s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-22T14:51:26.829023602 1.142972s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-03-22T14:53:16.166705770 110.480655s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: Added replica on this server.
+2016-03-22T14:53:17.827036567 112.140985s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: Starting a new Raft election for term 1.
+2016-03-22T14:53:17.884409494 112.198358s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: This server is Raft leader for term 1. Latest log index is 0.
+2016-03-22T14:53:24.529587744 118.843537s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: Added replica on this server.
+2016-03-22T14:53:26.459916016 120.773865s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: Starting a new Raft election for term 1.
+2016-03-22T14:53:26.529313988 120.843262s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: This server is Raft leader for term 1. Latest log index is 0.
+2016-03-22T14:53:37.726432607 132.040382s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: Added replica on this server.
+2016-03-22T14:53:39.430843237 133.744792s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: Starting a new Raft election for term 1.
+2016-03-22T14:53:39.496526807 133.810476s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: This server is Raft leader for term 1. Latest log index is 0.
+2016-03-22T14:53:46.746730684 141.060680s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: Added replica on this server.
+2016-03-22T14:53:48.443069128 142.757018s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: Starting a new Raft election for term 1.
+2016-03-22T14:53:48.508064219 142.822013s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: This server is Raft leader for term 1. Latest log index is 0.
+2016-03-23T17:46:05.484957184 5.848757s notice: Running rethinkdb 2.2.5~0trusty (GCC 4.8.2)...
+2016-03-23T17:46:05.502375077 5.866175s notice: Running on Linux 3.19.0-56-generic x86_64
+2016-03-23T17:46:05.502461935 5.866259s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-03-23T17:46:05.787167612 6.150969s info: Automatically using cache size of 1722 MB
+2016-03-23T17:46:05.788791972 6.152590s notice: Listening for intracluster connections on port 29015
+2016-03-23T17:46:06.296180330 6.659978s notice: Listening for client driver connections on port 28015
+2016-03-23T17:46:06.296370825 6.660168s notice: Listening for administrative HTTP connections on port 8080
+2016-03-23T17:46:06.296371982 6.660169s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-23T17:46:06.296372446 6.660170s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-23T17:46:06.296372922 6.660170s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-03-23T17:46:07.456092120 7.819890s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: Starting a new Raft election for term 2.
+2016-03-23T17:46:07.506699225 7.870497s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: This server is Raft leader for term 2. Latest log index is 2.
+2016-03-23T17:46:07.718507781 8.082306s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: Starting a new Raft election for term 2.
+2016-03-23T17:46:07.929568514 8.293367s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: Starting a new Raft election for term 2.
+2016-03-23T17:46:08.103975350 8.467774s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: Starting a new Raft election for term 2.
+2016-03-23T17:46:08.106386728 8.470184s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: This server is Raft leader for term 2. Latest log index is 2.
+2016-03-23T17:46:08.106446523 8.470244s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: This server is Raft leader for term 2. Latest log index is 2.
+2016-03-23T17:46:08.217948876 8.581747s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: This server is Raft leader for term 2. Latest log index is 2.
+2016-03-23T19:44:55.942545782 5605.306344s notice: Server got SIGTERM from pid 13107, uid 0; shutting down...
+2016-03-23T19:44:55.942729120 5605.306527s notice: Shutting down client connections...
+2016-03-23T19:44:55.944736884 5605.308535s notice: All client connections closed.
+2016-03-23T19:44:55.944752407 5605.308550s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-03-23T19:50:55.714836202 0.105287s notice: Running rethinkdb 2.2.5~0trusty (GCC 4.8.2)...
+2016-03-23T19:50:55.733252134 0.123699s notice: Running on Linux 3.19.0-56-generic x86_64
+2016-03-23T19:50:55.733382334 0.123825s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-03-23T19:50:56.093330604 0.483777s info: Automatically using cache size of 2847 MB
+2016-03-23T19:50:56.095230525 0.485674s notice: Listening for intracluster connections on port 29015
+2016-03-23T19:50:56.625446704 1.015890s notice: Listening for client driver connections on port 28015
+2016-03-23T19:50:56.625639504 1.016083s notice: Listening for administrative HTTP connections on port 8080
+2016-03-23T19:50:56.625664996 1.016108s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-23T19:50:56.625665915 1.016109s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-23T19:50:56.625666853 1.016110s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-03-23T19:50:57.418422308 1.808866s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: Starting a new Raft election for term 3.
+2016-03-23T19:50:57.490826802 1.881270s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: This server is Raft leader for term 3. Latest log index is 5.
+2016-03-23T19:50:57.555969709 1.946413s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: Starting a new Raft election for term 3.
+2016-03-23T19:50:57.671183641 2.061627s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: This server is Raft leader for term 3. Latest log index is 5.
+2016-03-23T19:50:57.776720483 2.167164s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: Starting a new Raft election for term 3.
+2016-03-23T19:50:57.894346939 2.284790s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: This server is Raft leader for term 3. Latest log index is 5.
+2016-03-23T19:50:58.327836500 2.718280s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: Starting a new Raft election for term 3.
+2016-03-23T19:50:58.506291579 2.896736s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: This server is Raft leader for term 3. Latest log index is 5.
+2016-03-23T20:55:55.236637423 3899.627082s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-03-23T20:55:55.236868483 3899.627312s notice: Shutting down client connections...
+2016-03-23T20:55:55.237685598 3899.628129s notice: All client connections closed.
+2016-03-23T20:55:55.237693326 3899.628136s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-03-23T20:55:55.262164288 3899.652608s notice: Storage engine shut down.
+2016-03-23T20:57:22.678361669 0.011590s notice: Running rethinkdb 2.2.5~0trusty (GCC 4.8.2)...
+2016-03-23T20:57:22.682042952 0.015270s notice: Running on Linux 3.19.0-56-generic x86_64
+2016-03-23T20:57:22.682151507 0.015376s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-03-23T20:57:22.855418725 0.188646s info: Cache size is set to 1024 MB
+2016-03-23T20:57:22.856529533 0.189754s notice: Listening for intracluster connections on port 29015
+2016-03-23T20:57:22.924109760 0.257334s notice: Listening for client driver connections on port 28015
+2016-03-23T20:57:22.924338174 0.257563s notice: Listening for administrative HTTP connections on port 8080
+2016-03-23T20:57:22.924339004 0.257563s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-23T20:57:22.924339298 0.257563s notice: To fully expose RethinkDB on the network, bind to all addresses by adding `bind=all' to the config file (db.config).
+2016-03-23T20:57:22.924339562 0.257564s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-03-23T20:57:24.337296899 1.670522s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: Starting a new Raft election for term 4.
+2016-03-23T20:57:24.405889650 1.739114s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: This server is Raft leader for term 4. Latest log index is 8.
+2016-03-23T20:57:24.548881608 1.882106s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: Starting a new Raft election for term 4.
+2016-03-23T20:57:24.616854289 1.950079s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: This server is Raft leader for term 4. Latest log index is 8.
+2016-03-23T20:57:24.641341909 1.974567s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: Starting a new Raft election for term 4.
+2016-03-23T20:57:24.764473974 2.097699s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: Starting a new Raft election for term 4.
+2016-03-23T20:57:24.865663518 2.198888s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: This server is Raft leader for term 4. Latest log index is 8.
+2016-03-23T20:57:24.884199033 2.217425s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: This server is Raft leader for term 4. Latest log index is 8.
+2016-03-24T00:01:38.523965321 0.214519s notice: Running rethinkdb 2.2.5~0trusty (GCC 4.8.2)...
+2016-03-24T00:01:38.544119176 0.234672s notice: Running on Linux 3.19.0-56-generic x86_64
+2016-03-24T00:01:38.544195866 0.234746s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-03-24T00:01:38.881351280 0.571902s info: Cache size is set to 1024 MB
+2016-03-24T00:01:38.882171155 0.572721s notice: Listening for intracluster connections on port 29015
+2016-03-24T00:01:39.914155471 1.604706s notice: Listening for client driver connections on port 28015
+2016-03-24T00:01:39.914362072 1.604912s notice: Listening for administrative HTTP connections on port 8080
+2016-03-24T00:01:39.914363582 1.604913s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-24T00:01:39.914425650 1.604975s notice: To fully expose RethinkDB on the network, bind to all addresses by adding `bind=all' to the config file (db.config).
+2016-03-24T00:01:39.914426528 1.604976s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-03-24T00:01:40.587733165 2.278284s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: Starting a new Raft election for term 5.
+2016-03-24T00:01:40.657568049 2.348118s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: This server is Raft leader for term 5. Latest log index is 11.
+2016-03-24T00:01:40.843954594 2.534505s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: Starting a new Raft election for term 5.
+2016-03-24T00:01:41.038147298 2.728698s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: Starting a new Raft election for term 5.
+2016-03-24T00:01:41.408579468 3.099130s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: This server is Raft leader for term 5. Latest log index is 11.
+2016-03-24T00:01:41.408647435 3.099197s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: This server is Raft leader for term 5. Latest log index is 11.
+2016-03-24T00:01:41.671763517 3.362314s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: Starting a new Raft election for term 5.
+2016-03-24T00:01:42.165071605 3.855622s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: This server is Raft leader for term 5. Latest log index is 11.
+2016-03-24T13:40:35.587587474 1.959458s notice: Running rethinkdb 2.2.5~0trusty (GCC 4.8.2)...
+2016-03-24T13:40:35.619016224 1.990886s notice: Running on Linux 3.19.0-56-generic x86_64
+2016-03-24T13:40:35.619071339 1.990939s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-03-24T13:40:36.002451520 2.374321s info: Cache size is set to 1024 MB
+2016-03-24T13:40:36.003704000 2.375572s notice: Listening for intracluster connections on port 29015
+2016-03-24T13:40:36.856283553 3.228152s notice: Listening for client driver connections on port 28015
+2016-03-24T13:40:36.856507052 3.228375s notice: Listening for administrative HTTP connections on port 8080
+2016-03-24T13:40:36.856508613 3.228376s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-24T13:40:36.856509127 3.228377s notice: To fully expose RethinkDB on the network, bind to all addresses by adding `bind=all' to the config file (db.config).
+2016-03-24T13:40:36.856509645 3.228377s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-03-24T13:40:37.409338201 3.781206s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: Starting a new Raft election for term 6.
+2016-03-24T13:40:37.478636411 3.850504s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: This server is Raft leader for term 6. Latest log index is 15.
+2016-03-24T13:40:38.096157848 4.468026s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: Starting a new Raft election for term 6.
+2016-03-24T13:40:38.131517121 4.503385s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: Starting a new Raft election for term 6.
+2016-03-24T13:40:38.194795394 4.566663s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: This server is Raft leader for term 6. Latest log index is 15.
+2016-03-24T13:40:38.212115233 4.583983s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: This server is Raft leader for term 6. Latest log index is 15.
+2016-03-24T13:40:38.364850641 4.736719s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: Starting a new Raft election for term 6.
+2016-03-24T13:40:38.478976525 4.850845s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: This server is Raft leader for term 6. Latest log index is 14.
+2016-04-23T14:29:56.116204375 0.341624s notice: Running rethinkdb 2.3.0~0trusty (GCC 4.8.2)...
+2016-04-23T14:29:56.147651746 0.373070s notice: Running on Linux 4.5.0-040500-generic x86_64
+2016-04-23T14:29:56.147739839 0.373155s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-04-23T14:29:56.367206900 0.592623s notice: Migrating cluster metadata to v2.3
+2016-04-23T14:29:56.781899389 1.007319s info: Cache size is set to 1024 MB
+2016-04-23T14:29:56.787240196 1.012655s notice: Listening for intracluster connections on port 29015
+2016-04-23T14:29:58.207920757 2.433336s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: Starting a new Raft election for term 7.
+2016-04-23T14:29:58.482233545 2.707649s notice: Listening for client driver connections on port 28015
+2016-04-23T14:29:58.482555656 2.707971s notice: Listening for administrative HTTP connections on port 8080
+2016-04-23T14:29:58.482556779 2.707971s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-04-23T14:29:58.482557141 2.707972s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-04-23T14:29:58.482570349 2.707985s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-04-23T14:29:58.482570807 2.707985s notice: To fully expose RethinkDB on the network, bind to all addresses by adding `bind=all' to the config file (db.config).
+2016-04-23T14:29:58.482571342 2.707986s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-04-23T14:29:58.653668629 2.879084s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: This server is Raft leader for term 7. Latest log index is 18.
+2016-04-23T14:29:59.609595837 3.835011s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: Starting a new Raft election for term 7.
+2016-04-23T14:29:59.761464490 3.986880s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: This server is Raft leader for term 7. Latest log index is 18.
+2016-04-23T14:29:59.833050576 4.058466s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: Starting a new Raft election for term 7.
+2016-04-23T14:29:59.995064250 4.220480s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: This server is Raft leader for term 7. Latest log index is 18.
+2016-04-23T14:30:00.055271674 4.280687s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: Starting a new Raft election for term 7.
+2016-04-23T14:30:00.216881987 4.442297s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: This server is Raft leader for term 7. Latest log index is 18.
+2016-04-23T18:40:48.857700460 15053.083116s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-04-23T18:40:48.857795569 15053.083210s notice: Shutting down client connections...
+2016-04-23T18:40:48.858572496 15053.083988s notice: All client connections closed.
+2016-04-23T18:40:48.858575416 15053.083990s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-04-23T18:40:48.917077726 15053.142493s notice: Storage engine shut down.
+2016-04-23T18:40:51.630100731 0.166492s notice: Running rethinkdb 2.3.0~0trusty (GCC 4.8.2)...
+2016-04-23T18:40:51.653902571 0.190294s notice: Running on Linux 4.5.0-040500-generic x86_64
+2016-04-23T18:40:51.653994714 0.190382s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/db
+2016-04-23T18:40:51.815962440 0.352352s info: Cache size is set to 1024 MB
+2016-04-23T18:40:51.816663820 0.353052s notice: Listening for intracluster connections on port 29015
+2016-04-23T18:40:52.165775076 0.702163s notice: Listening for client driver connections on port 28015
+2016-04-23T18:40:52.166055683 0.702444s notice: Listening for administrative HTTP connections on port 8080
+2016-04-23T18:40:52.166086899 0.702475s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-04-23T18:40:52.166087911 0.702476s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-04-23T18:40:52.166088991 0.702477s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-04-23T18:40:52.166089630 0.702477s notice: To fully expose RethinkDB on the network, bind to all addresses by adding `bind=all' to the config file (db.config).
+2016-04-23T18:40:52.166090266 0.702478s notice: Server ready, "geovanni_N46VM_50b" c4cf9af0-9d77-4f3b-b024-9fb2075b28ec
+2016-04-23T18:40:53.031885871 1.568274s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: Starting a new Raft election for term 8.
+2016-04-23T18:40:53.101091771 1.637480s info: Table 539f95b3-e3ba-4926-a52e-7800876c4482: This server is Raft leader for term 8. Latest log index is 21.
+2016-04-23T18:40:53.128115120 1.664503s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: Starting a new Raft election for term 8.
+2016-04-23T18:40:53.164374263 1.700762s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: Starting a new Raft election for term 8.
+2016-04-23T18:40:53.296411282 1.832799s info: Table 5d7804a3-dbc1-4723-900f-50d5eef67f06: This server is Raft leader for term 8. Latest log index is 21.
+2016-04-23T18:40:53.296452557 1.832840s info: Table 1aa02a30-efa7-4637-bca4-22c8d6609278: This server is Raft leader for term 8. Latest log index is 21.
+2016-04-23T18:40:53.729314555 2.265703s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: Starting a new Raft election for term 8.
+2016-04-23T18:40:53.945856697 2.482245s info: Table a1f506d9-b3b6-4576-8bec-f7aee82704a6: This server is Raft leader for term 8. Latest log index is 21.
+2016-04-23T18:42:29.215165880 97.751554s warn: Received invalid clustering header from [::1]:47618, closing connection -- something might be connecting to the wrong port.
+2016-04-23T18:42:39.858360818 108.394749s warn: Received invalid clustering header from [::1]:47620, closing connection -- something might be connecting to the wrong port.

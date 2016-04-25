@@ -1,0 +1,13 @@
+2016-03-22T00:40:34.523200297 0.064430s notice: Recursively removing directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/rethinkdb_data/tmp
+2016-03-22T00:40:34.549172008 0.090403s notice: Initializing directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/rethinkdb_data
+2016-03-22T00:40:34.549259090 0.090488s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/rethinkdb_data' did not already exist or is empty.)
+2016-03-22T00:40:34.549275292 0.090504s notice: Running rethinkdb 2.2.5~0trusty (GCC 4.8.2)...
+2016-03-22T00:40:34.551372346 0.092603s notice: Running on Linux 3.19.0-56-generic x86_64
+2016-03-22T00:40:34.551439194 0.092668s notice: Loading data from directory /home/geovanni/Programacao/Projetos/ProjectManagerOpenTool/rethinkdb_data
+2016-03-22T00:40:34.795709996 0.336940s info: Automatically using cache size of 1417 MB
+2016-03-22T00:40:34.796257461 0.337486s notice: Listening for intracluster connections on port 29015
+2016-03-22T00:40:34.797026397 0.338255s notice: Listening for client driver connections on port 28015
+2016-03-22T00:40:34.797136449 0.338365s notice: Listening for administrative HTTP connections on port 8080
+2016-03-22T00:40:34.797138172 0.338367s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-22T00:40:34.797138536 0.338367s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-22T00:40:34.797139536 0.338368s notice: Server ready, "geovanni_N46VM_ri1" 2052e25b-71bb-490a-baf2-bdb387f918e1
