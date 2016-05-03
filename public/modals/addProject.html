@@ -1,0 +1,22 @@
+<md-dialog aria-label="Mango (Fruit)"  ng-cloak flex="50">
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2 flex>Add Project</h2>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon md-svg-src="img/icons/close.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content layout="row" layout-align="start center" layout-padding>
+            <md-input-container flex>
+                <label>Name</label>
+                <input ng-model="project.name" type="text" autofocus>
+            </md-input-container>
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+            <md-button class="md-raised" ng-click="cancel()">Cancel</md-button>
+            <md-button class="md-raised md-primary" ng-click="save()">Save</md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
