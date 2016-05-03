@@ -16,38 +16,29 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $locationProvider.html5Mode(true);
 }]);
 
-app.factory('Project',['$cookies',function($cookies){
-    var userID = $cookies.get('userID');
-    return {
-        selectedProject: "teste",
-        users: {
-            0: {name:"Fulano", img:"/img/default-user-image.png"}
-        },
-        projects: {
-            "teste": {
-                name:"Teste 1",
-                boards:[
-                    {
-                        name:"To do",
-                        tasks:[
-                            {name:"teste", type:1, members:[0]},
-                            {name:"teste", type:2, members:[0]}
-                        ]
-                    },
-                    {name:"Doing",tasks:[{name:"teste"},{name:"teste"}]},
-                    {name:"Done",tasks:[{name:"teste"},{name:"teste"}]}
-                ]
-            }
+app.factory('project',['$http','$cookies',function($http, $cookies){
+    this.userID = $cookies.get('userID');
+    var _self = this;
+    var _return = {
+        selectedProject : {},
+        projects : [],
+        updateProjects: function(callback){
+            $http.get('/api/project').then(function(data) {
+                _return.projects = data.data;
+                callback();
+            });
         }
     };
+    return _return;
+
 }]);
 
-app.controller('AppCtrl', function($scope, $mdDialog, Project, $socket){
+app.controller('AppCtrl', function($scope, $mdDialog, project, $socket){
     console.log("App Controller Started");
 
-    $scope.selectedProject = Project.selectedProject;
-    $scope.projects = Project.projects;
-    $scope.users = Project.users;
+    $scope.selectedProject = project.selectedProject;
+    $scope.projects = project.projects;
+    $scope.users = project.users;
 
     $scope.status = {
         0: {title:"Error",icon:"img/icons/replay.svg"},
@@ -57,8 +48,6 @@ app.controller('AppCtrl', function($scope, $mdDialog, Project, $socket){
         4: {title:"Stoped",icon:"img/icons/replay.svg"}
     };
 
-    $scope.selectedDownload = 0;
-
     $socket.on('board:update', function (message) {
         console.log(message);
     });
@@ -67,22 +56,7 @@ app.controller('AppCtrl', function($scope, $mdDialog, Project, $socket){
         0: {name:"KanBan", url:"/project/:projectID/kanban"}
     };
 
-    $scope.selectProject = function(ev){
-        $mdDialog.show({
-            controller: selectProjectCtrl,
-            templateUrl: '/modals/selectProject.html',
-            parent: angular.element(document.body),
-            targetEvent: ev,
-            focusOnOpen: false,
-            clickOutsideToClose:true
-        }).then(function(download) {
-            $scope.downloads.push(download);
-        }, function() {
-            console.log("do nothing");
-        });
-    }
-
-    window.setTimeout($scope.selectProject,500);
+    window.setTimeout(function(){selectProject($mdDialog,project)}, 500);
 
     $scope.showSettings = function(ev){
         $mdDialog.show({
@@ -121,14 +95,56 @@ app.controller('LoginCtrl', function($scope, $http){
 
 app.controller('KanBanCtrl', KanBanCtrl);
 
-function selectProjectCtrl($scope, $mdDialog) {
-    $scope.projects = [];
-    $scope.selectedProject = "";
+function selectProjectCtrl($scope, $mdDialog, $http, project) {
+    $scope.projects = project.projects;
+    $scope.selectedProject = project.projects[0];
+    project.updateProjects(function(){
+        $scope.projects = project.projects;
+        $scope.selectedProject = project.projects.length?project.projects[0]:{};
+    });
     $scope.cancel = function() {
         $mdDialog.cancel();
     };
     $scope.select = function() {
         $mdDialog.hide($scope.selectedProject);
+    };
+    $scope.add = function() {
+        $mdDialog.show({
+            controller: addProjectCtrl,
+            templateUrl: '/modals/addProject.html',
+            parent: angular.element(document.body),
+            focusOnOpen: false,
+            clickOutsideToClose:true
+        }).then(function(proj) {
+            project.updateProjects(function(){
+                selectProject($mdDialog,project);
+            });
+        }, function() {
+            console.log("do nothing");
+        });
+    };
+}
+
+function addProjectCtrl($scope,$http,$mdDialog) {
+    $scope.project = {
+        name: ""
+    };
+    $scope.cancel = function() {
+        $mdDialog.cancel();
+    };
+    $scope.save = function() {
+        $http({
+            method  : 'POST',
+            url     : '/api/project',
+            data    : $scope.project,
+        }).success(function(data) {
+            if (data.success){
+                $mdDialog.hide($scope.project);
+                console.log(data.data);
+            }else{
+                console.log("error");
+            }
+        });
     };
 }
 
@@ -141,7 +157,22 @@ function SettingCtrl($scope, $mdDialog) {
     };
 }
 
-function KanBanCtrl($scope,Project) {
-    $scope.boards = Project.projects[$scope.selectedProject].boards;
+function KanBanCtrl($scope,project) {
+    $scope.boards = project.projects[$scope.selectedProject].boards;
     console.log($scope.boards);
+}
+
+function selectProject($mdDialog,project){
+    $mdDialog.show({
+        controller: selectProjectCtrl,
+        templateUrl: '/modals/selectProject.html',
+        parent: angular.element(document.body),
+        focusOnOpen: false,
+        clickOutsideToClose:true
+    }).then(function(proj) {
+        if(proj)
+            project.selectedProject = JSON.parse(proj);
+    }, function() {
+        console.log("do nothing");
+    });
 }

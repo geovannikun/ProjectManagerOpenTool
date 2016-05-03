@@ -43,11 +43,22 @@ module.exports = new function(){
 
         app.delete('/api/login', (req, res) => {delete req.session.userID});
 
-        app.post('/api/project/', (req, res) => {
-            r.table('Project').get("users").contains(req.session.userID)
-            .run(connection).then(
-                cursor => cursor.toArray().then(results => res.json(results))
-            ).error(err => { throw err });
+        app.get('/api/project', (req, res) => {
+            r.table('Project')
+            .run(connection)
+            .then(cursor => { cursor.toArray().then(results => res.json(results)) })
+            .error(err => { throw err });
+        });
+
+        app.post('/api/project', (req, res) => {
+            r.table('Project').insert(
+                {
+                    name: req.body["name"]
+                }
+            )
+            .run(connection)
+            .then(result => res.json({success:true,data:result}))
+            .error(err => { throw err });
         });
 
         app.get('/api/user/:userID*?', (req, res) => {
@@ -88,6 +99,9 @@ module.exports = new function(){
         });
         app.get('/login', (req, res) => {
             res.sendFile(__dirname + '/public/login.html');
+        });
+        app.get('/', (req, res) => {
+            res.sendFile(__dirname + '/public/index.html');
         });
     };
 
